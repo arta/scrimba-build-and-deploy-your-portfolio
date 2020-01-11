@@ -1,0 +1,54 @@
+/* ###### */
+/* GLOBAL */
+/* ------ */
+
+*,
+*::before,
+*::after {
+    border: 1px dotted black;
+    box-sizing: border-box;
+}
+
+:root {
+    --clr-light: white;
+    --clr-dark: #303030;
+    --clr-accent: #16e0bd;
+
+    --ff-primary: 'Source Sans Pro', sans-serif;
+    --ff-secondary: 'Source Code Pro', monospace;
+
+    --fs-h1: 3rem;
+    --fs-h2: 2.25rem;
+    --fs-h3: 1.25rem;
+    --fs-body: 1rem;
+}
+
+body {
+    background: var(--clr-light);
+    color: var(--clr-dark);
+    font-family: var(--ff-primary);
+    font-size: var(--fs-body);
+    line-height: 1.6;
+    margin: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+
+/* ############# */
+/* MEDIA QUERIES */
+/* ------------- */
+
+@media (min-width: 800px) {
+    :root {
+        --ff-h1: 4.5rem;
+        --ff-h2: 3.75rem;
+        --ff-h3: 1.5rem;
+        --ff-body: 1.125rem;
+    }
+}
+
+
