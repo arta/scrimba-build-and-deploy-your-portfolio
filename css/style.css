@@ -74,6 +74,11 @@ h1 { font-weight: var(--fw-reg); }
     margin: 0;
 }
 
+.h1-span-own-line {
+    display: block; /* always own line */
+    font-weight: var(--fw-bold);
+}
+
 
 /* ############# */
 /* MEDIA QUERIES */
