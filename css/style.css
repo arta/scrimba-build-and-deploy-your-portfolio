@@ -82,12 +82,10 @@ h2 { margin-bottom: .25em; }
 
 /* ---------- */
 
-h1 {
+.intro-h1 {
     font-weight: var(--fw-reg);
     line-height: 1;
 }
-
-/* ---------- */
 
 .section-subtitle-p {
     font-size: var(--fs-h3);
@@ -96,7 +94,7 @@ h1 {
 
 /* ---------- */
 
-.h1-span-own-line {
+.span-intro-h1-own-line {
     display: block; /* always own line */
     font-weight: var(--fw-bold);
 }
