@@ -126,6 +126,8 @@ section { padding: 5em 2em; }
 /* ----- */
 
 @media (min-width: 600px) {
+
+    /* --- Intro section set up. Very interesting, rich in novelty. Study, review. --- */
     .section-intro {
         column-gap: 2em;
         display: grid;
@@ -162,4 +164,5 @@ section { padding: 5em 2em; }
         grid-area: image;
         min-width: 250px; /* counter grid min-content column shrinking img to 0 */
     }
+    /* --- EOF Intro section set up -------------------------------------------------- */
 }
