@@ -26,6 +26,8 @@
     --fw-bold: 900;
 }
 
+/* ------ */
+
 body {
     background: var(--clr-light);
     color: var(--clr-dark);
@@ -61,18 +63,24 @@ h3 { font-size: var(--fs-h3); }
 h1,
 h2 { margin-bottom: .25em; }
 
-h1 { font-weight: var(--fw-reg); }
-
 .section-subtitle-p--intro,
 .section-subtitle-p--about {
     background: var(--clr-accent);
     font-family: var(--ff-secondary);
 }
 
+/* ---------- */
+
+h1 { font-weight: var(--fw-reg); }
+
+/* ---------- */
+
 .section-subtitle-p {
     font-size: var(--fs-h3);
     margin: 0;
 }
+
+/* ---------- */
 
 .h1-span-own-line {
     display: block; /* always own line */
