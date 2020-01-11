@@ -145,7 +145,7 @@ section { padding: 5em 2em; }
         align-self: start;
         color: var(--clr-accent); /* blend to hide, show ::after content instead */
         grid-column: 1 / -1;
-        grid-row: 2;
+        grid-row: 2; /* must declare to overlap with the image */
         left: -1.5em;
         position: relative; /* to stretch with left width */
         width: calc(100% + 1.5em); /* re-fill the gap after shift to left */
