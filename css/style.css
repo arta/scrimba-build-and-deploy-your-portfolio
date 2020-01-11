@@ -141,13 +141,21 @@ section { padding: 5em 2em; }
 
     .section-subtitle-p--intro {
         align-self: start;
+        color: var(--clr-accent); /* blend to hide, show ::after content instead */
         grid-column: 1 / 3;
         grid-row: 2;
         left: -1.5em;
         position: relative; /* to stretch with left width */
-        text-align: right;
         width: calc(100% + 1.5em); /* re-fill the gap after shift to left */
         z-index: -1; /* re-stack after relative's new stacking order */
+    }
+
+    /* justify subtitle content with h1 content; extremely hackish */
+    .section-subtitle-p--intro::after {
+        color: var(--clr-dark);
+        content: 'Front-end dev';
+        left: 6.875em;
+        position: relative;
     }
 
     .intro-img {
