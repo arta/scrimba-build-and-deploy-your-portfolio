@@ -90,6 +90,12 @@ h1 {
     font-weight: var(--fw-bold);
 }
 
+/* Nested images are displayed as block; see global resets atop */
+/* valid html: blocks cannot be nested in inline parents (<a> is inline) */
+/* interestingly, inline-block puts space around the anchors/imagess, block does not */
+.a-portfolio-item { display: inline-block; }
+
+
 /* ###### */
 /* LAYOUT */
 /* ------ */
