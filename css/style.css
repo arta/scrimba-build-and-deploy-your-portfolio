@@ -160,6 +160,6 @@ section { padding: 5em 2em; }
 
     .intro-img {
         grid-area: image;
-        max-width: 250px;
+        min-width: 250px; /* counter grid min-content column shrinking img to 0 */
     }
 }
