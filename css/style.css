@@ -136,7 +136,7 @@ section { padding: 5em 2em; }
             'image subtitle';
         grid-template-columns: min-content max-content;
         margin: 0 auto;
-        width: min-content;
+        width: min-content; /* totally new (to me) .. remember this */
     }
 
     .intro-h1 { grid-area: heading; }
