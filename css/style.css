@@ -130,14 +130,14 @@ section { padding: 5em 2em; }
         column-gap: 2em;
         display: grid;
         grid-template-areas:
-            'image title'
+            'image heading'
             'image subtitle';
         grid-template-columns: min-content max-content;
         margin: 0 auto;
         width: min-content;
     }
 
-    .intro-h1 { grid-area: title; }
+    .intro-h1 { grid-area: heading; }
 
     .section-subtitle-p--intro {
         align-self: start;
