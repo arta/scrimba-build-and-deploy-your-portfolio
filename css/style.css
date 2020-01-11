@@ -42,6 +42,17 @@ img {
     max-width: 100%;
 }
 
+/* ------ */
+
+@media (min-width: 800px) {
+    :root {
+        --ff-h1: 4.5rem;
+        --ff-h2: 3.75rem;
+        --ff-h3: 1.5rem;
+        --ff-body: 1.125rem;
+    }
+}
+
 
 /* ########## */
 /* TYPOGRAPHY */
@@ -110,19 +121,3 @@ nav { display: none; } /* no show for now */
 section { padding: 5em 2em; }
 
 .section-intro { position: relative; }
-
-
-/* ############# */
-/* MEDIA QUERIES */
-/* ------------- */
-
-@media (min-width: 800px) {
-    :root {
-        --ff-h1: 4.5rem;
-        --ff-h2: 3.75rem;
-        --ff-h3: 1.5rem;
-        --ff-body: 1.125rem;
-    }
-}
-
-
