@@ -143,6 +143,11 @@ section { padding: 5em 2em; }
         align-self: start;
         grid-column: 1 / 3;
         grid-row: 2;
+        left: -1.5em;
+        position: relative; /* to stretch with left width */
+        text-align: right;
+        width: calc(100% + 1.5em); /* re-fill the gap after shift to left */
+        z-index: -1; /* re-stack after relative's new stacking order */
     }
 
     .intro-img {
