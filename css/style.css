@@ -154,7 +154,7 @@ section { padding: 5em 2em; }
     .section-subtitle-p--intro::after {
         color: var(--clr-dark);
         content: 'Front-end dev';
-        left: 6.875em;
+        left: 6.875em; /* trial-error; this is hackish "solution" */
         position: relative;
     }
 
