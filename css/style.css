@@ -96,7 +96,10 @@ h2 { margin-bottom: .25em; }
     padding: .25em 1em;
 }
 
-.section-subtitle-p--intro { text-transform: uppercase; }
+.section-subtitle-p--intro {
+    display: inline-block;
+    text-transform: uppercase;
+}
 
 /* ---------- */
 
