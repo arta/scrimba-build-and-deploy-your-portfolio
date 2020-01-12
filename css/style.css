@@ -129,6 +129,14 @@ section { padding: 5em 2em; }
 
 .section-intro { position: relative; }
 
+.section-services {
+    background-blend-mode: difference;
+    background-color: var(--clr-dark);
+    background-image: url('/img/services-bg.jpg');
+    color: var(--clr-light);
+    text-align: center;
+}
+
 /* ----- */
 
 .intro-img { box-shadow: var(--bs); }
