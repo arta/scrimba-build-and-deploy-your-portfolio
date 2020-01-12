@@ -149,6 +149,11 @@ section { padding: 5em 2em; }
     text-align: center;
 }
 
+.services-col {
+    margin: 0 auto 2em;
+    max-width: 500px;
+}
+
 /* ----- */
 
 .intro-img { box-shadow: var(--bs); }
@@ -198,4 +203,19 @@ section { padding: 5em 2em; }
         min-width: 250px; /* counter grid min-content column shrinking img to 0 */
     }
     /* --- EOF Intro section set up -------------------------------------------------- */
+}
+
+@media (min-width: 800px) {
+
+    .services-h2,
+    .a-btn--services-to-portfolio { grid-column: 2 / -2; }
+
+    .section-services {
+        column-gap: 2em;
+        display: grid;
+        grid-template-columns: 1fr repeat(3, minmax(200px, 300px)) 1fr;
+    }
+
+    .services-col:first-of-type { grid-column: 2; }
+
 }
