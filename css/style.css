@@ -207,12 +207,15 @@ section { padding: 5em 2em; }
 
 @media (min-width: 800px) {
 
-    .services-columns {
-        display: flex;
-        margin: 0 auto;
-        max-width: 1000px;
+    .services-h2,
+    .a-btn--services-to-portfolio { grid-column: 2 / -2; }
+
+    .section-services {
+        column-gap: 2em;
+        display: grid;
+        grid-template-columns: 1fr repeat(3, minmax(200px, 300px)) 1fr;
     }
 
-    .services-col + .services-col { margin-left: 2em; }
+    .services-col:first-of-type { grid-column: 2; }
 
 }
