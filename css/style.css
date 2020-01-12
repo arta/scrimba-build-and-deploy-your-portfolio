@@ -5,7 +5,7 @@
 *,
 *::before,
 *::after {
-    border: .1px dotted hotpink;
+    /* border: .1px dotted hotpink; */
     box-sizing: border-box;
 }
 
@@ -88,6 +88,18 @@ h2 { margin-bottom: .25em; }
 .intro-h1 {
     font-weight: var(--fw-reg);
     line-height: 1;
+}
+
+.services-h2 { color: var(--clr-accent); }
+
+.services-h2::after {
+    background: var(--clr-light); /* currentColor; */
+    content: '';
+    display: block;
+    height: 1px;
+    margin: .5em auto 1em;
+    opacity: .25;
+    width: 2em;
 }
 
 .section-subtitle-p {
