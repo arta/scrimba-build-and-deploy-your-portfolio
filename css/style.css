@@ -146,10 +146,13 @@ section { padding: 5em 2em; }
         color: var(--clr-accent); /* blend to hide, show ::after content instead */
         grid-column: 1 / -1;
         grid-row: 2; /* must declare to overlap with the image */
+        /* --- Grow section subtitle to the left under the image: --- */
+        position: relative; /* make the growth with left & width possible */
         left: -1.5em;
-        position: relative; /* to stretch with left width */
         width: calc(100% + 1.5em); /* re-fill the gap after shift to left */
-        z-index: -1; /* re-stack after relative's new stacking order */
+        /* could also be done with: position: absolute; right: 0; left: -1.5em; */
+        z-index: -1; /* push down after relative's new stacking order */
+        /* --- */
     }
 
     /* justify subtitle content with h1 content; extremely hackish */
