@@ -205,7 +205,8 @@ section { padding: 5em 2em; }
 
 .portfolio-img { transition: opacity .35s; }
 
-.portfolio-img:hover { opacity: .6; }
+.portfolio-img:hover,
+.a-portfolio-item:focus .portfolio-img { opacity: .6; }
 
 /* ----- */
 
