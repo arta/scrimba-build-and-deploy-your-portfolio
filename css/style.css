@@ -260,6 +260,10 @@ section { padding: 5em 2em; }
     .services-h2,
     .a-btn--services-to-portfolio { grid-column: 2 / -2; }
 
+    /* left bleed + img width + column gap */
+    /* 36(=1.5*1.5rem) + 250 + 36(=2*1.125rem) */
+    .section-subtitle-p--intro { padding-left: 322px; }
+
     .a-btn--services-to-portfolio { justify-self: center; }
 
     /* Effective content max-width: 964 = 300*3 + 32*2 */
@@ -270,10 +274,6 @@ section { padding: 5em 2em; }
         display: grid;
         grid-template-columns: 1fr repeat(3, minmax(200px, 300px)) 1fr;
     }
-
-    /* left bleed + img width + column gap */
-    /* 36(=1.5*1.5rem) + 250 + 36(=2*1.125rem) */
-    .section-subtitle-p--intro { padding-left: 322px; }
 
     .services-col:first-of-type { grid-column: 2; }
 
