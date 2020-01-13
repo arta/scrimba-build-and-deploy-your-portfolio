@@ -235,6 +235,11 @@ section { padding: 5em 2em; }
     .section-subtitle-p--about {
         grid-column: 2 / -2;
         grid-row: 2;
+        position: relative;
+        left: -1em;
+        width: calc(100% + 2em); /* 1em to offset left shit, 1em for right bleed */
+        padding-right: 254px; /* 36(column gap) + 200(img width) + 18(right bleed */
+        z-index: -1;
     }
 
     .article-about { grid-area: article; }
