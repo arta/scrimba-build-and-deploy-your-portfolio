@@ -140,6 +140,12 @@ h2 { margin-bottom: .25em; }
  /* hove scale transform only works if <a> has display: inline-block; */
 .a-btn--services-to-portfolio:hover { transform: scale(1.1); }
 
+/* Novel treatment; interesting. */
+:focus {
+    outline: 3px solid var(--clr-accent);
+    outline-offset: 3px;
+}
+
 /* ###### */
 /* LAYOUT */
 /* ------ */
