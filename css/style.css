@@ -135,6 +135,7 @@ h2 { margin-bottom: .25em; }
 .a-portfolio-item {
     background: var(--clr-accent);
     display: inline-block;
+    overflow: hidden;
 }
 
 .a-btn--services-to-portfolio {
@@ -203,10 +204,16 @@ section { padding: 5em 2em; }
 .about-img,
 .intro-img { box-shadow: var(--bs); }
 
-.portfolio-img { transition: opacity .35s; }
+.portfolio-img {
+    transition: opacity .35s,
+                transform .35s;
+}
 
 .portfolio-img:hover,
-.a-portfolio-item:focus .portfolio-img { opacity: .6; }
+.a-portfolio-item:focus .portfolio-img {
+    opacity: .6;
+    transform: scale(1.2);
+}
 
 /* ----- */
 
