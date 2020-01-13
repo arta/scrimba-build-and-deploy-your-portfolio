@@ -48,12 +48,14 @@ img {
 /* ------ */
 
 @media (min-width: 800px) {
+
     :root {
-        --ff-h1: 4.5rem;
-        --ff-h2: 3.75rem;
-        --ff-h3: 1.5rem;
-        --ff-body: 1.125rem;
+        --fs-h1: 4.5rem;
+        --fs-h2: 3.75rem;
+        --fs-h3: 1.5rem;
+        --fs-body: 1.125rem;
     }
+
 }
 
 
@@ -269,6 +271,9 @@ section { padding: 5em 2em; }
         display: grid;
         grid-template-columns: 1fr repeat(3, minmax(200px, 300px)) 1fr;
     }
+
+    /* trial-error; again, this is part of a hackish "solution" */
+    .section-subtitle-p--intro::after { left: 4.125em; }
 
     .services-col:first-of-type { grid-column: 2; }
 
