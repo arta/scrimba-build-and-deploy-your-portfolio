@@ -177,6 +177,7 @@ section { padding: 5em 2em; }
 
 /* ----- */
 
+.about-img,
 .intro-img { box-shadow: var(--bs); }
 
 /* ----- */
@@ -226,6 +227,33 @@ section { padding: 5em 2em; }
     /* --- EOF Intro section set up -------------------------------------------------- */
 }
 
+@media (min-width: 600px) {
+
+    .about-h2 { grid-area: heading; }
+
+    .section-subtitle-p--about {
+        grid-column: 2 / -2;
+        grid-row: 2;
+    }
+
+    .article-about { grid-area: article; }
+
+    /* 732 = 964 - 200 - 32, where 964 = see .section-services grid below */
+    /* 200 min is arbitrary */
+    .section-about {
+        column-gap: 2em;
+        display: grid;
+        grid-template-columns: 1fr minmax(200px, 732px) 200px 1fr;
+        grid-template-areas:
+            '. heading  image .'
+            '. subtitle image .'
+            '. article  image .';
+    }
+
+    .about-img { grid-area: image; }
+
+}
+
 @media (min-width: 800px) {
 
     .services-h2,
@@ -233,6 +261,9 @@ section { padding: 5em 2em; }
 
     .a-btn--services-to-portfolio { justify-self: center; }
 
+    /* Effective content max-width: 964 = 300*3 + 32*2 */
+    /* (close to Kevin's flexbox max-width: 1000;) */
+    /* 200 min is arbitrary */
     .section-services {
         column-gap: 2em;
         display: grid;
