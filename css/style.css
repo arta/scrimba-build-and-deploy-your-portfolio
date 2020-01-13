@@ -203,6 +203,8 @@ section { padding: 5em 2em; }
 .about-img,
 .intro-img { box-shadow: var(--bs); }
 
+.portfolio-img { transition: opacity .35s; }
+
 .portfolio-img:hover { opacity: .6; }
 
 /* ----- */
