@@ -208,7 +208,7 @@ section { padding: 5em 2em; }
 
 .portfolio-img {
     transition: opacity .35s,
-                transform .35s;
+                transform .75s cubic-bezier(.5,0,.5,1);
 }
 
 .portfolio-img:hover,
