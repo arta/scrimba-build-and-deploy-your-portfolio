@@ -202,7 +202,6 @@ section { padding: 5em 2em; }
 
     .section-subtitle-p--intro {
         align-self: start;
-        color: var(--clr-accent); /* blend to hide, show ::after content instead */
         grid-column: 1 / -1;
         grid-row: 2; /* must declare to overlap with the image */
         /* --- Grow section subtitle to the left under the image: --- */
@@ -212,14 +211,9 @@ section { padding: 5em 2em; }
         /* could also be done with: position: absolute; right: 0; left: -1.5em; */
         z-index: -1; /* push down after relative's new stacking order */
         /* --- */
-    }
-
-    /* justify subtitle content with h1 content; extremely hackish */
-    .section-subtitle-p--intro::after {
-        color: var(--clr-dark);
-        content: 'Front-end dev';
-        left: 6.25em; /* trial-error; this is hackish "solution" */
-        position: relative;
+        /* left bleed + img width + column gap */
+        /* 30(=1.5*1.25rem) + 250 + 32(=2*1rem) */
+        padding-left: 312px;
     }
 
     .intro-img {
@@ -238,7 +232,7 @@ section { padding: 5em 2em; }
         position: relative;
         left: -1em;
         width: calc(100% + 2em); /* 1em to offset left shit, 1em for right bleed */
-        padding-right: 254px; /* 36(column gap) + 200(img width) + 18(right bleed */
+        padding-right: 254px; /* 36(column gap) + 200(img width) + 18(right bleed) */
         z-index: -1;
     }
 
@@ -277,8 +271,9 @@ section { padding: 5em 2em; }
         grid-template-columns: 1fr repeat(3, minmax(200px, 300px)) 1fr;
     }
 
-    /* trial-error; again, this is part of a hackish "solution" */
-    .section-subtitle-p--intro::after { left: 4.125em; }
+    /* left bleed + img width + column gap */
+    /* 36(=1.5*1.5rem) + 250 + 36(=2*1.125rem) */
+    .section-subtitle-p--intro { padding-left: 322px; }
 
     .services-col:first-of-type { grid-column: 2; }
 
