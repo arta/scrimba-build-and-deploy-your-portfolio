@@ -224,11 +224,10 @@ section { padding: 5em 2em; }
         grid-area: image;
         min-width: 250px; /* counter grid min-content column shrinking img to 0 */
     }
-    /* --- EOF Intro section set up -------------------------------------------------- */
-}
+    /* --- EOF Intro section set up --- --- --- --- --- --- --- --- --- --- --- ---  */
 
-@media (min-width: 600px) {
-
+    /* --- About section set up. Diff from Kevin's. --- */
+    /* Kevin set section's max width with max-width, because no background color */
     .about-h2 { grid-area: heading; }
 
     .section-subtitle-p--about {
@@ -251,6 +250,7 @@ section { padding: 5em 2em; }
     }
 
     .about-img { grid-area: image; }
+    /* --- EOF About section set up --- --- --- --- --- --- */
 
 }
 
