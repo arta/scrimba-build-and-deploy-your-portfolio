@@ -224,6 +224,8 @@ section { padding: 5em 2em; }
     .services-h2,
     .a-btn--services-to-portfolio { grid-column: 2 / -2; }
 
+    .a-btn--services-to-portfolio { justify-self: center; }
+
     .section-services {
         column-gap: 2em;
         display: grid;
