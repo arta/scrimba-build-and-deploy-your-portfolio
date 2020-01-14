@@ -155,6 +155,25 @@ h2 { margin-bottom: .25em; }
  /* hove scale transform only works if <a> has display: inline-block; */
 .a-btn--services-to-portfolio:hover { transform: scale(1.1); }
 
+.a-footer-mailto,
+.a-footer-social { color: var(--clr-accent); }
+
+.a-footer-mailto {
+    font-weight: var(--fw-bold);
+    margin-bottom: 1em;
+    text-decoration: none;
+}
+
+.a-footer-social {
+    margin: 0 .5em;
+    padding: .5em; /* make room for finger tapping on mobile */
+}
+
+.a-footer-mailto:hover,
+.a-footer-social:hover { opacity: .7; }
+
+.a-footer-mailto:hover { text-decoration: underline; }
+
 /* Novel treatment; interesting. */
 :focus {
     outline: 3px solid var(--clr-accent);
@@ -164,6 +183,15 @@ h2 { margin-bottom: .25em; }
 /* ###### */
 /* LAYOUT */
 /* ------ */
+
+footer {
+    background: #111;
+    display: flex;
+    flex-direction: column;
+    font-size: var(--fs-h3);
+    align-items: center;
+    padding: 3em 0;
+}
 
 header {
     display: flex;
