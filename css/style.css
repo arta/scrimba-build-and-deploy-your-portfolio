@@ -87,6 +87,17 @@ h2 { margin-bottom: .25em; }
 
 /* ---------- */
 
+.header-nav-ul {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-evenly;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
 .intro-h1 {
     font-weight: var(--fw-reg);
     line-height: 1;
@@ -128,6 +139,15 @@ h2 { margin-bottom: .25em; }
     display: block; /* always own line */
     font-weight: var(--fw-bold);
 }
+
+.a-header-nav {
+    color: inherit;
+    font-size: var(--fs-h2);
+    font-weight: var(--fw-bold);
+    text-decoration: none;
+}
+
+.a-header-nav:hover { color: var(--clr-accent); }
 
 /* Nested images are displayed as block; see global resets atop */
 /* valid html: blocks cannot be nested in inline parents (<a> is inline) */
