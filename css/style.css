@@ -180,6 +180,7 @@ h2 { margin-bottom: .25em; }
     outline-offset: 3px;
 }
 
+
 /* ###### */
 /* LAYOUT */
 /* ------ */
@@ -196,9 +197,14 @@ footer {
 header {
     display: flex;
     justify-content: space-between;
+    padding: 1em;
 }
 
-nav { display: none; } /* no show for now */
+nav {
+    position: fixed;
+}
+
+.header-logo { max-width: 110px; }
 
 .portfolio-items {
     display: grid;
