@@ -79,8 +79,8 @@ h3 { font-size: var(--fs-h3); }
 h1,
 h2 { margin-bottom: .25em; }
 
-.section-subtitle-p--intro,
-.section-subtitle-p--about {
+.subtitle-p--intro,
+.subtitle-p--about {
     background: var(--clr-accent);
     font-family: var(--ff-secondary);
 }
@@ -104,19 +104,19 @@ h2 { margin-bottom: .25em; }
     width: 2em;
 }
 
-.section-subtitle-p {
+.subtitle-p {
     font-size: var(--fs-h3);
     margin: 0 0 1em;
     padding: .25em 1em;
 }
 
-.section-subtitle-p--intro {
+.subtitle-p--intro {
     display: inline-block;
     letter-spacing: 1px;
     text-transform: uppercase;
 }
 
-.section-subtitle-p--portfolio {
+.subtitle-p--portfolio {
     color: var(--clr-accent);
     font-weight: var(--fw-bold);
     margin-bottom: 2em;
@@ -264,7 +264,7 @@ section { padding: 5em 2em; }
 
     .intro-h1 { grid-area: heading; }
 
-    .section-subtitle-p--intro {
+    .subtitle-p--intro {
         align-self: start;
         grid-column: 1 / -1;
         grid-row: 2; /* must declare to overlap with the image */
@@ -290,7 +290,7 @@ section { padding: 5em 2em; }
     /* Kevin set section's max width with max-width, because no background color */
     .about-h2 { grid-area: heading; }
 
-    .section-subtitle-p--about {
+    .subtitle-p--about {
         grid-column: 2 / -2;
         grid-row: 2;
         position: relative;
@@ -326,7 +326,7 @@ section { padding: 5em 2em; }
 
     /* left bleed + img width + column gap */
     /* 36(=1.5*1.5rem) + 250 + 36(=2*1.125rem) */
-    .section-subtitle-p--intro { padding-left: 322px; }
+    .subtitle-p--intro { padding-left: 322px; }
 
     .a-btn--services-to-portfolio { justify-self: center; }
 
