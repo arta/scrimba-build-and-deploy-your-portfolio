@@ -9,6 +9,12 @@
     box-sizing: border-box;
 }
 
+/* Novel treatment; interesting. */
+:focus {
+    outline: 3px solid var(--clr-accent);
+    outline-offset: 3px;
+}
+
 :root {
     --bs: .25em .25em .75em rgba(0,0,0, .25),
           .125em .125em .25em rgba(0,0,0, .15);
@@ -193,12 +199,6 @@ h2 { margin-bottom: .25em; }
 
  /* hove scale transform only works if <a> has display: inline-block; */
 .a-btn--services-to-portfolio:hover { transform: scale(1.1); }
-
-/* Novel treatment; interesting. */
-:focus {
-    outline: 3px solid var(--clr-accent);
-    outline-offset: 3px;
-}
 
 
 /* ###### */
