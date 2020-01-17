@@ -205,12 +205,31 @@ h2 { margin-bottom: .25em; }
 /* NAVIGATION */
 /* ---------- */
 
+/* --- Header nav hamburger: --- */
 .span-hamburger {
-    background: var(--clr-dark);
     display: block;
     position: relative;
-    width: 2em; height: 3px;
 }
+
+.span-hamburger::before,
+.span-hamburger::after {
+    content: '';
+    left: 0;
+    position: absolute;
+}
+
+.span-hamburger,
+.span-hamburger::before,
+.span-hamburger::after {
+    background: var(--clr-dark);
+    height: 3px;
+    width: 2em;
+}
+
+.span-hamburger::before { top: -6px; }
+
+.span-hamburger::after { top: 6px; }
+/* --- EOF header nav hamburger --- */
 
 
 /* ###### */
