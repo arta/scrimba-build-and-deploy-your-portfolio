@@ -201,6 +201,18 @@ h2 { margin-bottom: .25em; }
 .a-btn--services-to-portfolio:hover { transform: scale(1.1); }
 
 
+/* ########## */
+/* NAVIGATION */
+/* ---------- */
+
+.span-hamburger {
+    background: var(--clr-dark);
+    display: block;
+    position: relative;
+    width: 2em; height: 3px;
+}
+
+
 /* ###### */
 /* LAYOUT */
 /* ------ */
