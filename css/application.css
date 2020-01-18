@@ -246,7 +246,7 @@ header {
     padding: 1em;
 }
 
-nav {
+.header-nav {
     background: var(--clr-dark);
     color: var(--clr-light);
     position: fixed; top: 0; right: 0; bottom: 0; left: 0;
@@ -257,9 +257,9 @@ nav {
 .header-logo { max-width: 110px; }
 
 /* Novel approach: */
-/*  nav state class is toggled on document's body */
+/*  .header-nav--open state class is toggled on document's body */
 /*  see application.js */
-.header-nav--open nav {
+.header-nav--open .header-nav {
     transform: translateX(0);
 }
 
