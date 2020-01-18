@@ -270,6 +270,15 @@ header {
 
 .header-nav--open .btn--toggle-header-nav { position: fixed; }
 
+.header-nav--open .span-hamburger-center { transform: rotate(45deg); }
+
+.header-nav--open .span-hamburger-center::before {
+    transform:  rotate(90deg)
+                translateX(6px);
+}
+
+.header-nav--open .span-hamburger-center::after { content: unset; } /* or `opacity: 0;` */
+
 
 /* ###### */
 /* LAYOUT */
