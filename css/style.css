@@ -205,6 +205,11 @@ h2 { margin-bottom: .25em; }
 
 .a-header-nav:hover { color: var(--clr-accent); }
 
+.btn--toggle-header-nav {
+    padding: 0;
+    z-index: 101; /* nav has 100 */
+}
+
 /* ----------------- */
 
 header {
@@ -232,7 +237,7 @@ nav {
 .span-hamburger-center,
 .span-hamburger-center::before,
 .span-hamburger-center::after {
-    background: var(--clr-dark);
+    background: var(--clr-accent);
     height: 3px;
     width: 2em;
 }
