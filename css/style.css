@@ -224,29 +224,29 @@ nav {
 .header-logo { max-width: 110px; }
 
 /* --- Header nav hamburger: --- */
-.span-hamburger {
+.span-hamburger-center {
     display: block;
     position: relative;
 }
 
-.span-hamburger,
-.span-hamburger::before,
-.span-hamburger::after {
+.span-hamburger-center,
+.span-hamburger-center::before,
+.span-hamburger-center::after {
     background: var(--clr-dark);
     height: 3px;
     width: 2em;
 }
 
-.span-hamburger::before,
-.span-hamburger::after {
+.span-hamburger-center::before,
+.span-hamburger-center::after {
     content: '';
     left: 0;
     position: absolute;
 }
 
-.span-hamburger::before { top: -6px; }
+.span-hamburger-center::before { top: -6px; }
 
-.span-hamburger::after { top: 6px; }
+.span-hamburger-center::after { top: 6px; }
 /* --- EOF header nav hamburger --- */
 
 
