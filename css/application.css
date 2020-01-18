@@ -256,6 +256,13 @@ nav {
 
 .header-logo { max-width: 110px; }
 
+/* Novel approach: */
+/*  nav state class is toggled on document's body */
+/*  see application.js */
+.header-nav--open nav {
+    transform: translateX(0);
+}
+
 
 /* ###### */
 /* LAYOUT */
