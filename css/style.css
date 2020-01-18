@@ -93,17 +93,6 @@ h2 { margin-bottom: .25em; }
 
 /* ---------- */
 
-.header-nav-ul {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    justify-content: space-evenly;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
 .intro-h1 {
     font-weight: var(--fw-reg);
     line-height: 1;
@@ -145,15 +134,6 @@ h2 { margin-bottom: .25em; }
     display: block; /* always own line */
     font-weight: var(--fw-bold);
 }
-
-.a-header-nav {
-    color: inherit;
-    font-size: var(--fs-h2);
-    font-weight: var(--fw-bold);
-    text-decoration: none;
-}
-
-.a-header-nav:hover { color: var(--clr-accent); }
 
 /* Nested images are displayed as block; see global resets atop */
 /* valid html: blocks cannot be nested in inline parents (<a> is inline) */
@@ -201,21 +181,52 @@ h2 { margin-bottom: .25em; }
 .a-btn--services-to-portfolio:hover { transform: scale(1.1); }
 
 
-/* ########## */
-/* NAVIGATION */
-/* ---------- */
+/* ############ */
+/* HEADER / NAV */
+/* ------------ */
+
+.header-nav-ul {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-evenly;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.a-header-nav {
+    color: inherit;
+    font-size: var(--fs-h2);
+    font-weight: var(--fw-bold);
+    text-decoration: none;
+}
+
+.a-header-nav:hover { color: var(--clr-accent); }
+
+/* ----------------- */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+}
+
+nav {
+    background: var(--clr-dark);
+    color: var(--clr-light);
+    position: fixed; top: 0; right: 0; bottom: 0; left: 0;
+    transform: translateX(100%);
+    z-index: 100;
+}
+
+.header-logo { max-width: 110px; }
 
 /* --- Header nav hamburger: --- */
 .span-hamburger {
     display: block;
     position: relative;
-}
-
-.span-hamburger::before,
-.span-hamburger::after {
-    content: '';
-    left: 0;
-    position: absolute;
 }
 
 .span-hamburger,
@@ -224,6 +235,13 @@ h2 { margin-bottom: .25em; }
     background: var(--clr-dark);
     height: 3px;
     width: 2em;
+}
+
+.span-hamburger::before,
+.span-hamburger::after {
+    content: '';
+    left: 0;
+    position: absolute;
 }
 
 .span-hamburger::before { top: -6px; }
@@ -244,22 +262,6 @@ footer {
     align-items: center;
     padding: 3em 0;
 }
-
-header {
-    display: flex;
-    justify-content: space-between;
-    padding: 1em;
-}
-
-nav {
-    background: var(--clr-dark);
-    color: var(--clr-light);
-    position: fixed; top: 0; right: 0; bottom: 0; left: 0;
-    transform: translateX(100%);
-    z-index: 100;
-}
-
-.header-logo { max-width: 110px; }
 
 .portfolio-items {
     display: grid;
