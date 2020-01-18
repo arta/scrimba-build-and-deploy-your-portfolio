@@ -185,6 +185,34 @@ h2 { margin-bottom: .25em; }
 /* HEADER / NAV */
 /* ------------ */
 
+/* --- Nav hamburger: --- */
+
+.span-hamburger-center {
+    display: block;
+    position: relative;
+}
+
+.span-hamburger-center,
+.span-hamburger-center::before,
+.span-hamburger-center::after {
+    background: var(--clr-accent);
+    height: 3px;
+    width: 2em;
+}
+
+.span-hamburger-center::before,
+.span-hamburger-center::after {
+    content: '';
+    left: 0;
+    position: absolute;
+}
+
+.span-hamburger-center::before { top: -6px; }
+
+.span-hamburger-center::after { top: 6px; }
+
+/* --- EOF nav hamburger --- */
+
 .header-nav-ul {
     align-items: center;
     display: flex;
@@ -227,32 +255,6 @@ nav {
 }
 
 .header-logo { max-width: 110px; }
-
-/* --- Header nav hamburger: --- */
-.span-hamburger-center {
-    display: block;
-    position: relative;
-}
-
-.span-hamburger-center,
-.span-hamburger-center::before,
-.span-hamburger-center::after {
-    background: var(--clr-accent);
-    height: 3px;
-    width: 2em;
-}
-
-.span-hamburger-center::before,
-.span-hamburger-center::after {
-    content: '';
-    left: 0;
-    position: absolute;
-}
-
-.span-hamburger-center::before { top: -6px; }
-
-.span-hamburger-center::after { top: 6px; }
-/* --- EOF header nav hamburger --- */
 
 
 /* ###### */
