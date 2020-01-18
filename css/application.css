@@ -265,9 +265,7 @@ header {
 /* Novel approach: */
 /*  .header-nav--open state class is toggled on document's body */
 /*  see application.js */
-.header-nav--open .header-nav {
-    transform: translateX(0);
-}
+.header-nav--open .header-nav { transform: translateX(0); }
 
 .header-nav--open .btn--toggle-header-nav { position: fixed; }
 
