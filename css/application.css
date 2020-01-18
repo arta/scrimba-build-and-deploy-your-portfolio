@@ -234,7 +234,9 @@ h2 { margin-bottom: .25em; }
 .a-header-nav:hover { color: var(--clr-accent); }
 
 .btn--toggle-header-nav {
-    padding: 0;
+    padding: .5em;
+    /* fixed for fixed :) */
+    position: absolute; top: 1em; right: 1em;
     z-index: 101; /* nav has 100 */
 }
 
@@ -262,6 +264,8 @@ header {
 .header-nav--open .header-nav {
     transform: translateX(0);
 }
+
+.header-nav--open .btn--toggle-header-nav { position: fixed; }
 
 
 /* ###### */
