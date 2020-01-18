@@ -234,6 +234,9 @@ h2 { margin-bottom: .25em; }
 .a-header-nav:hover { color: var(--clr-accent); }
 
 .btn--toggle-header-nav {
+    background: transparent;    /* remove button's      */
+    border: 0;                  /* default appearance   */
+    cursor: pointer;
     padding: .5em;
     /* fixed for fixed :) */
     position: absolute; top: 1em; right: 1em;
