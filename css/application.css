@@ -270,7 +270,14 @@ header {
 /*  see application.js */
 .header-nav--open .header-nav { transform: translateX(0); }
 
-.header-nav--open .btn--toggle-header-nav { position: fixed; }
+/* shorten hamburger piece(s) so the X fits bettter into the :focus outline */
+.header-nav--open .span-hamburger-center,
+.header-nav--open .span-hamburger-center::before { width: 1.4em; }
+
+.header-nav--open .btn--toggle-header-nav {
+    padding-right: .8em; padding-left: .8em;
+    position: fixed;
+}
 
 .header-nav--open .span-hamburger-center { transform: rotate(.625turn); }
 
@@ -279,7 +286,8 @@ header {
                 translateX(6px);
 }
 
-.header-nav--open .span-hamburger-center::after { content: unset; } /* or `opacity: 0;` */
+/* only two hamburger pieces needed to make the X; hide the bottom one */
+.header-nav--open .span-hamburger-center::after { content: unset; } /* or opacity: 0; */
 
 
 /* ###### */
