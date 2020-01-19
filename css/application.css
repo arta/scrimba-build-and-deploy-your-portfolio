@@ -112,6 +112,11 @@ h2 { margin-bottom: .25em; }
     width: 2em;
 }
 
+.portfolio-item-p {
+    margin-right: auto; margin-left: auto;
+    max-width: 600px;
+}
+
 .subtitle-p {
     font-size: var(--fs-h3);
     margin: 0 0 1em;
@@ -320,6 +325,12 @@ section { padding: 5em 2em; }
     text-align: center;
 }
 
+.section-portfolio-item {
+    margin: 0 auto;
+    max-width: 964px;
+    padding: 0 2em 2em;
+}
+
 .section-services {
     background-blend-mode: difference;
     background-color: var(--clr-dark);
@@ -348,6 +359,8 @@ section { padding: 5em 2em; }
     opacity: .6;
     transform: scale(1.2);
 }
+
+.portfolio-item-img { margin-bottom: 1em; }
 
 /* ----- */
 
